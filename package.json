@@ -25,6 +25,8 @@
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-graphql": "^0.8.4",
     "@types/koa-mount": "^3.0.1",
+    "@types/koa-router": "7.4.2",
+    "@types/koa-convert": "^1.2.3",
     "nodemon": "^2.0.7",
     "ts-node": "^10.0.0",
     "ts-node-dev": "^1.1.6",
@@ -38,6 +40,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-graphql": "^0.8.0",
     "koa-mount": "^4.0.0",
-    "koa-router": "10.0.0"
+    "koa-router": "10.0.0",
+    "koa-convert": "^2.0.0"
   }
 }

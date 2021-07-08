@@ -1,7 +1,11 @@
+import { createServer } from 'http'
 import app from './app'
 import { config } from './config'
 
-app.listen(config.PORT, () => {
-  console.log(`server running on port ${config.PORT}`)
-})  
+(async () => {
+  const server = createServer(app.callback())
 
+  server.listen(config.PORT, () => {
+    console.log(`server running at http://localhost:${config.PORT}`)
+  })
+})()
