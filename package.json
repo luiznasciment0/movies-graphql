@@ -4,7 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && pm2-runtime start ecosystem.config.js",
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
     "dev": "ts-node-dev ./src/index.ts",
     "build": "tsc"
   },
