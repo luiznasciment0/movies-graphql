@@ -18,8 +18,8 @@ const ThumbnailsType = new GraphQLObjectType({
     })
 })
 
-const SnippedType = new GraphQLObjectType({
-    name: 'Snipped',
+const SnippetType = new GraphQLObjectType({
+    name: 'Snippet',
     fields: () => ({
         channelId: { type: GraphQLString },
         channelTitle: { type: GraphQLString },
@@ -43,10 +43,8 @@ const VideoIDType = new GraphQLObjectType({
 const VideoType = new GraphQLObjectType({
     name: 'Video',
     fields: () => ({
-        etag: { type: GraphQLString },
         id: { type: VideoIDType },
-        kind: { type: GraphQLString },
-        snipped: { type: SnippedType },
+        snippet: { type: SnippetType },
     })
 })
 
