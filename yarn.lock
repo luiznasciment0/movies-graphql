@@ -126,13 +126,6 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-convert@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@types/koa-convert/-/koa-convert-1.2.3.tgz#8c54390aca943bbb846faf44a2cf735caaca4f24"
-  integrity sha512-3TKYhzKBk0jsaUgYu6eg4o9s1qwWlSfQQ/j90BblY0WYF3RyD6JiIBpigFrCwIhoNLDOYSz1mBzm5Oscy3WVvQ==
-  dependencies:
-    "@types/koa" "*"
-
 "@types/koa-graphql@^0.8.4":
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/@types/koa-graphql/-/koa-graphql-0.8.4.tgz#519f74399de2097b9d442f19b2d7a8551ed4d2ce"
@@ -759,11 +752,6 @@ graceful-fs@^4.1.2:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
-graphql-playground-middleware@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/graphql-playground-middleware/-/graphql-playground-middleware-1.1.2.tgz#f8503b1b89cf6dcf79f1873feb1e821b4d099bd7"
-  integrity sha512-HP0zrMtmamPUe0IUeLuBBK7GsTc9JrmE8JsjxTgEaIZP5GF2huorrNXop9kLbrT8PcuIjDc41i1mO4hQwwrvOg==
-
 graphql@*, graphql@^15.1.0, graphql@^15.5.0:
   version "15.5.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.1.tgz#f2f84415d8985e7b84731e7f3536f8bb9d383aad"
@@ -1013,14 +1001,6 @@ koa-convert@^1.2.0:
   dependencies:
     co "^4.6.0"
     koa-compose "^3.0.0"
-
-koa-convert@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/koa-convert/-/koa-convert-2.0.0.tgz#86a0c44d81d40551bae22fee6709904573eea4f5"
-  integrity sha512-asOvN6bFlSnxewce2e/DK3p4tltyfC4VM7ZwuTuepI7dEQVcvpyFuBcEARu1+Hxg8DIwytce2n7jrZtRlPrARA==
-  dependencies:
-    co "^4.6.0"
-    koa-compose "^4.1.0"
 
 koa-graphql@^0.8.0:
   version "0.8.0"
