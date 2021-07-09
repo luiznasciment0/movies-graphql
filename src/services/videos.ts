@@ -7,7 +7,7 @@ type YoutubeListItem = {
         videoId: string
     }
     kind: string
-    snipped: {
+    snippet: {
         channelId: string
         channelTitle: string
         description: string
@@ -42,8 +42,7 @@ type YoutubeListItems = {
 export const fetchYoutubeVideos = async (query: string): Promise<YoutubeListItems> => {
     try {
         const response = await youtubeDataV3Api.get(`${query}`)
-
-        return response.data.items
+        return response.data
     } catch (error) {
         throw error
     }
