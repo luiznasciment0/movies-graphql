@@ -1,6 +1,8 @@
 import { GraphQLObjectType, GraphQLString } from "graphql"
 import { fetchMovieByTitle } from "../../services/movies"
+import { fetchYoutubeVideos } from "../../services/videos"
 import MoviesQueryType from "./movies"
+import VideosQueryType from "./videos"
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',
@@ -8,11 +10,21 @@ const RootQuery = new GraphQLObjectType({
         moviesByTitle: {
             type: MoviesQueryType,
             args: {
-                Title: { type: GraphQLString },
+                title: { type: GraphQLString },
             },
-            resolve(parent, args) {
-                const { Title } = args
-                return fetchMovieByTitle(Title)
+            resolve: async (parent, args) => {
+                const { title } = args
+                return await fetchMovieByTitle(title)
+            },
+        },
+        videosByTitle: {
+            type: VideosQueryType,
+            args: {
+                title: { type: GraphQLString },
+            },
+            resolve: async (parent, args) => {
+                const { title } = args
+                return await fetchYoutubeVideos(title)
             }
         }
     }
