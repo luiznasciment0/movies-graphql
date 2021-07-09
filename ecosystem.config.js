@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name: 'koa-graphql',
-    script: 'dist/index.js',
+    script: './src/index.ts',
     instances: 1,
     autorestart: true,
     watch: false,
