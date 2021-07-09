@@ -1,4 +1,4 @@
-import rapidMoviesApi from "./api"
+import { rapidMoviesApi } from "./api"
 
 export const fetchMovieByTitle = async (title: string) => {
     try {

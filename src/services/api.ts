@@ -1,7 +1,7 @@
 import axios from "axios";
 import { config } from '../config'
 
-const rapidMoviesApi = axios.create({
+export const rapidMoviesApi = axios.create({
     baseURL: config.BASE_URL,
     headers: {
         'x-rapidapi-key': config.API_KEY,
@@ -10,4 +10,12 @@ const rapidMoviesApi = axios.create({
     }
 })
 
-export default rapidMoviesApi
+const googleApisUrl = 'https://www.googleapis.com'
+
+export const youtubeDataV3Api = axios.create({
+    baseURL: 
+        `${googleApisUrl}/youtube/v3/search?key=${config.YOUTUBE_API_KEY}&type=video&part=snippet&maxResults=10&q=`,
+    headers: {
+        'Content-Type': 'application/json',
+    }
+})
