@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "pm2-runtime start ecosystem.config.js",
+    "start": "tsc && pm2-runtime start ecosystem.config.js",
     "dev": "ts-node-dev ./src/index.ts",
     "build": "tsc"
   },
