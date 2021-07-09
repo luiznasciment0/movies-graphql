@@ -1,7 +1,7 @@
 import axios from "axios";
 import { config } from '../config'
 
-const api = axios.create({
+const rapidMoviesApi = axios.create({
     baseURL: config.BASE_URL,
     headers: {
         'x-rapidapi-key': config.API_KEY,
@@ -10,4 +10,4 @@ const api = axios.create({
     }
 })
 
-export default api
+export default rapidMoviesApi
